@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quản lý câu lạc bộ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f4f8;
+        }
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HỆ THỐNG QUẢN LÝ CÂU LẠC BỘ</h1>
+        <p>Đề tài 39 - Triển khai hệ thống phần mềm</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Quản lý thành viên</h2>
+            <p>Danh sách và thông tin thành viên CLB.</p>
+            <button onclick="xemThanhVien()">Xem thanh viên</button>
+            <button onclick="themThanhVien()">Thêm thành viên</button>
+            <button onclick="xoaThanhVien()">Xóa thành viên</button>
+            <button onclick="suaThanhVien()">Sửa thành viên</button>
+            <h3>Danh sách thành viên</h3>
+            <div id="danhSachThanhVien"></div>
+        </div>
+
+        <div class="card">
+            <h2>Quản lý hoạt động</h2>
+            <p>Theo dõi các hoạt động của câu lạc bộ.</p>
+            <button onclick="xemHoatDong()">Xem hoạt động</button>
+            <button onclick="themHoatDong()">Thêm hoạt động</button>
+            <button onclick="xoaHoatDong()">Xóa hoạt động</button>
+        </div>
+
+        <div class="card">
+            <h2>Quản lý sự kiện</h2>
+            <p>Quản lý lịch tổ chức sự kiện CLB.</p>
+            <button onclick="xemSuKien()">Xem sự kiện</button>
+            <button onclick="themSuKien()">Thêm sự kiện</button>
+            <button onclick="xoaSuKien()">Xóa sự kiện</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
